@@ -57,6 +57,10 @@ Before you call `complete_task`, attach proof that the work works and how it loo
   kind, content type and size, send the file with an HTTP `PUT` to the returned URL with
   exactly the returned headers, then call `confirm_evidence_upload` with the evidence id.
 - Attach links and short text (a CI run, a note) with `attach_evidence`.
+- `complete_task` is refused with `evidence_required` while the task has no evidence (an
+  upload counts once it is confirmed). Attach the proof and call it again. Only when no
+  proof is possible (for example a change with nothing to run or show), pass
+  `noEvidenceReason` saying why; Wake records it with your verification.
 
 ## Finishing or stopping
 
