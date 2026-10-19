@@ -1,0 +1,14 @@
+{
+  "name": "wake",
+  "owner": {
+    "name": "Wake"
+  },
+  "description": "Wake's Claude Code plugin, from the newest stable Wake release.",
+  "plugins": [
+    {
+      "name": "wake",
+      "description": "Keeps Claude Code connected to the repository's Wake project: session context, claim release and the Wake skills.",
+      "source": "./plugin"
+    }
+  ]
+}
