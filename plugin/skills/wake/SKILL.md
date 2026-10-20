@@ -68,6 +68,6 @@ Before you call `complete_task`, attach proof that the work works and how it loo
   `verification` that says what you checked and the `commits` that hold the work.
 - If you stop working on a task without finishing it, call `release_task` so another session
   can take it. When the session ends, Wake releases the claims it still holds.
-- To plan new work, propose phases for your branch with `plan_roadmap`; the repository's
-  OpenSpec files stay the source of truth.
-- To plan a roadmap, its milestones or a new change, follow the `wake-planning` skill.
+- To plan new work, propose phases for your branch with `plan_roadmap`; the planning
+  method's files stay the source of truth.
+- To plan a roadmap, its milestones or a new phase, follow the `wake-planning` skill.
