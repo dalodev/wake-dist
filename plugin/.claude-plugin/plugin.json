@@ -1,6 +1,6 @@
 {
   "name": "wake",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "Keeps Claude Code connected to the repository's Wake project: session context with free and claimed tasks, claim release at session end, and the Wake task and planning skills.",
   "author": {
     "name": "Wake"
