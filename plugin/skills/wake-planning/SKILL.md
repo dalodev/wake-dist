@@ -73,6 +73,16 @@ milestones:
   your phase under an existing milestone and it shows there at once; a milestone defined on
   the branch shows after the merge and the default branch's next `wake sync`.
 
+## Writing tasks
+
+- Keep a task's title short, one sentence, and put the detail in indented lines under it
+  (`Done when:` starts when it is done).
+- Wake keeps up to 500 characters of a title, 2,000 of the description and 1,000 of the
+  done-when. Longer text is not an error: `wake sync` shortens it (a title to its first
+  sentence or with `…`, its full text moved to the description), sends the plan and prints
+  how many tasks it shortened. `wake doctor` lists them as `path:line`; the file keeps the
+  full text.
+
 ## When a milestone is done
 
 1. When every task of the open milestone is done, suggest tagging its target `version`
@@ -80,9 +90,10 @@ milestones:
    milestone delivered.
 2. Move to the next milestone and detail it into phases now, not before.
 
-## When `wake sync` refuses the file
+## When `wake sync` refuses the milestones file
 
-Errors read `<milestones file>:<line>: <message>`, such as
+Long task text never makes `wake sync` refuse a file (see Writing tasks); the milestones
+file can. Its errors read `<milestones file>:<line>: <message>`, such as
 `openspec/milestones.yaml:4: <message>`: a listed phase that does not exist (no directory
 under `openspec/changes/` or its `archive/`, no feature directory under `specs/`, no document
 under `odd/tasks/`), a milestone id or phase listed twice, an invalid `version`
