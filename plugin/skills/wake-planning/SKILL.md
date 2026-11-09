@@ -18,7 +18,7 @@ Read the method from `plan` in `.wake/config.json` (no `plan` means OpenSpec), o
 
 | Method | A phase | Its tasks | The milestones file | Plan a new phase |
 |--------|---------|-----------|---------------------|------------------|
-| OpenSpec (`openspec`) | a change | `openspec/changes/<change>/tasks.md` | `openspec/milestones.yaml` | `/opsx:propose` (`/opsx-propose` in OpenCode and Pi) |
+| OpenSpec (`openspec`) | a change | `openspec/changes/<change>/tasks.md` | `openspec/milestones.yaml` | `/opsx:propose` (`/opsx-propose` in OpenCode and Pi, `$openspec-propose` in Codex) |
 | Spec Kit (`spec-kit`) | a feature | `specs/<feature>/tasks.md` | `specs/milestones.yaml` | `/speckit.specify`, then `/speckit.plan`, then `/speckit.tasks` |
 | ODD (`odd`) | a feature document | the `## Tasks` section of `odd/tasks/<feature>.md` | `odd/milestones.yaml` | a new `odd/tasks/<feature>.md` with `## Specs`, `## Tasks` and `## Log` |
 
