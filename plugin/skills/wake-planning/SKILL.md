@@ -75,8 +75,23 @@ milestones:
 
 ## Writing tasks
 
-- Keep a task's title short, one sentence, and put the detail in indented lines under it
-  (`Done when:` starts when it is done).
+Every task gets indented lines under it saying what it includes, and a line starting with
+`Done when:` that names a check anyone can observe (a test that passes, a command's output, a
+screen that shows something). Wake shows them as the task's Includes and Done when; without
+them both stay empty.
+
+```markdown
+- [ ] 1.2 Store the session token
+  - The token goes to the session store, keyed by its hash; the plain token is never stored.
+  - Done when: a stored token is found again after a restart, and its test passes.
+```
+
+- Keep a task's title short, one sentence; the detail goes in the indented lines.
+- The method's own planning command may write bare checkbox lines. After `/opsx:propose`,
+  `/speckit.tasks` or a new ODD document, read the tasks file it wrote and add any missing
+  description or `Done when:` line before `wake sync`. A row of an ODD `## Tasks` table has no
+  room for them; use checkbox lines when a task needs them.
+- `wake sync` counts the open tasks without a `Done when:` line and `wake doctor` lists them.
 - Wake keeps up to 500 characters of a title, 2,000 of the description and 1,000 of the
   done-when. Longer text is not an error: `wake sync` shortens it (a title to its first
   sentence or with `…`, its full text moved to the description), sends the plan and prints
