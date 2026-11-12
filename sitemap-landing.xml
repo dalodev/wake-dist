@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The landing in English and Spanish, each naming the other (spec: landing, Site maps). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://dalodev.github.io/wake-dist/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dalodev.github.io/wake-dist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dalodev.github.io/wake-dist/es/"/>
+  </url>
+  <url>
+    <loc>https://dalodev.github.io/wake-dist/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dalodev.github.io/wake-dist/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dalodev.github.io/wake-dist/es/"/>
+  </url>
+</urlset>

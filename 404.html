@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'self'; form-action 'none'">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="color-scheme" content="dark">
+    <title>Page not found · Wake</title>
+    <link rel="icon" href="/wake-dist/favicon.svg" type="image/svg+xml">
+    <!-- GitHub Pages serves this page for every missing address under the site, the docs' too
+         (design D5 of landing-search). The landing's stylesheet has a hashed name, so the page
+         carries its own styles; it runs no script. -->
+    <style>
+      :root { color-scheme: dark; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #0a0a0b;
+        color: #e6e6e6;
+        font: 16px/1.6 ui-sans-serif, system-ui, sans-serif;
+      }
+      main { max-width: 36rem; padding: 32px 24px; }
+      img { display: block; width: 48px; height: 48px; margin-bottom: 32px; }
+      h1 { margin: 0 0 8px; color: #fff; font-size: 28px; line-height: 1.2; }
+      p { margin: 0 0 16px; color: #bdbdc2; }
+      section + section { margin-top: 40px; padding-top: 32px; border-top: 1px solid #1f1f22; }
+      a { color: #ff8a57; }
+      a:focus-visible { outline: 2px solid #ff8a57; outline-offset: 2px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="/wake-dist/favicon.svg" alt="Wake">
+      <section>
+        <h1>Page not found</h1>
+        <p>This address is not part of Wake's site.</p>
+        <p><a href="https://dalodev.github.io/wake-dist/">Go to Wake</a> or <a href="https://dalodev.github.io/wake-dist/docs/">read the docs</a>.</p>
+      </section>
+      <section lang="es-ES">
+        <h1>Esta página no existe</h1>
+        <p>Esta dirección no forma parte del sitio de Wake.</p>
+        <p><a href="https://dalodev.github.io/wake-dist/es/">Ir a Wake</a> o <a href="https://dalodev.github.io/wake-dist/docs/">leer la documentación</a>.</p>
+      </section>
+    </main>
+  </body>
+</html>

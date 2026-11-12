@@ -1,1 +1,0 @@
-import{_ as t,o as a,c as s,a3 as i}from"./chunks/framework.DH50UWNB.js";const k=JSON.parse('{"title":"Pi","description":"","frontmatter":{},"headers":[],"relativePath":"agents/pi.md","filePath":"agents/pi.md"}'),o={name:"agents/pi.md"};function n(d,e,h,r,l,c){return a(),s("div",null,[...e[0]||(e[0]=[i("",18)])])}const u=t(o,[["render",n]]);export{k as __pageData,u as default};

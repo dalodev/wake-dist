@@ -1,0 +1,60 @@
+# Wake docs
+
+> Learn to install, connect and run Wake, the project tracker your coding agents use.
+
+## Start
+
+- [Introduction](https://dalodev.github.io/wake-dist/docs/): Wake is a project tracker your coding agents use: what it does, how plans, claims and evidence work, and where to start.
+- [Concepts](https://dalodev.github.io/wake-dist/docs/start/concepts): The words Wake's docs use, explained: project, phase, task, claim, session, evidence, milestone and version.
+- [Install Wake](https://dalodev.github.io/wake-dist/docs/start/install): Install the Wake server on Linux, macOS or Windows with WSL 2 with one command, in Docker, and find your Wake URL and installation directory.
+- [Install the CLI and sign in](https://dalodev.github.io/wake-dist/docs/start/cli): Install the wake CLI your agents' hooks run, put it on your PATH, sign in in the browser, with a token or in CI, and keep it updated.
+- [Your first project](https://dalodev.github.io/wake-dist/docs/start/first-project): Create your Wake account, connect a repository with wake setup, sign your agent in, and finish your first task with evidence.
+- [Questions](https://dalodev.github.io/wake-dist/docs/start/questions): Short answers before you install Wake: which systems it runs on, whether there is a hosted version, and who counts toward the free plan's 3 people.
+
+## Agents and plans
+
+- [Several agents on one repository](https://dalodev.github.io/wake-dist/docs/agents/several-agents): How Wake keeps several coding agents on one repository from building the same task: claims, refusals, renewals, stale claims and evidence.
+- [Claude Code](https://dalodev.github.io/wake-dist/docs/agents/claude-code): How to connect a repository to Claude Code with wake connect claude-code: the commands you get, the files it writes, signing in and updates.
+- [OpenCode](https://dalodev.github.io/wake-dist/docs/agents/opencode): How to connect a repository to OpenCode with wake connect opencode: its commands, plugin and skills, the files it writes, signing in and updates.
+- [Pi](https://dalodev.github.io/wake-dist/docs/agents/pi): How to connect a repository to Pi with wake connect pi: its commands, extension and skills, the files it writes, signing in and updates.
+- [Codex](https://dalodev.github.io/wake-dist/docs/agents/codex): How to connect a repository to Codex with wake connect codex: the commands it installs as skills, the files it writes, signing in and updates.
+- [OpenSpec](https://dalodev.github.io/wake-dist/docs/agents/openspec): Plan a repository with OpenSpec, Wake's default planning method: how to start, plan with your agent, use branches, and how Wake reads changes and tasks.
+- [Spec Kit](https://dalodev.github.io/wake-dist/docs/agents/spec-kit): Plan a repository with GitHub Spec Kit: how to start, plan with your agent, and how Wake reads its features and their tasks.
+- [ODD](https://dalodev.github.io/wake-dist/docs/agents/odd): Plan a repository with ODD (Organic Driven Development): how to start, plan with your agent, and how Wake reads feature documents and their tasks.
+- [Milestones and task text](https://dalodev.github.io/wake-dist/docs/agents/milestones): Group changes into milestones, what a checked box does to a task completed in Wake, and how Wake shortens long task text, with every planning method.
+
+## Use Wake
+
+- [Screens](https://dalodev.github.io/wake-dist/docs/use/screens): Wake's web app screens: Tracking, Roadmap, Team, task detail, Versions and archived projects, updated live while your agents work.
+- [Versions and tags](https://dalodev.github.io/wake-dist/docs/use/versions): How a git tag releases a version in Wake, which tasks each tag releases, and how versions link to your git host.
+- [Workspaces and roles](https://dalodev.github.io/wake-dist/docs/use/workspaces): Workspaces hold projects and the people who work on them: switch between them, invite people, what owners, members and viewers can do, and remove a member.
+- [Audit log](https://dalodev.github.io/wake-dist/docs/use/audit-log): Wake's audit log of who changed a workspace's people and tokens: how owners read it, download it as CSV, and what it records.
+- [Tokens](https://dalodev.github.io/wake-dist/docs/use/tokens): Create and revoke personal access tokens that let the wake CLI, a script or a CI pipeline act as you in one workspace.
+- [Your account](https://dalodev.github.io/wake-dist/docs/use/account): Your Wake account: sign in with GitHub, Google, Microsoft or your company's provider, change your password and sign out everywhere.
+
+## Run your server
+
+- [Install options](https://dalodev.github.io/wake-dist/docs/run/install-options): What Wake's installer needs, its options, how to serve Wake on a domain, what the installer writes, and its hardened services.
+- [Sign-in providers](https://dalodev.github.io/wake-dist/docs/run/sign-in-providers): Turn on sign-in with GitHub, Google, Microsoft or an OpenID Connect provider such as Okta or Keycloak, and how Wake matches accounts.
+- [Sign-up and accounts](https://dalodev.github.io/wake-dist/docs/run/sign-up): Who can create an account on your Wake server, invitation-only sign-up, sign-up limits, and the free plan's accounts with wake-server accounts.
+- [Evidence storage](https://dalodev.github.io/wake-dist/docs/run/evidence-storage): Where Wake keeps evidence files such as screenshots and logs: the bundled MinIO, how presigned uploads move files, and using your own storage.
+- [Start and stop](https://dalodev.github.io/wake-dist/docs/run/start-stop): Start and stop Wake with wake-server, bring it back after a reboot when Docker was not running, and remove Wake from a machine.
+- [Status](https://dalodev.github.io/wake-dist/docs/run/status): What wake-server status prints: the version and address, the people the free plan counts, backups, each service's health and the newest release.
+- [Upgrade](https://dalodev.github.io/wake-dist/docs/run/upgrade): Upgrade the Wake server and the wake CLI: which command to run, what upgrades by itself, specific versions, upgrade backups and new-release notices.
+- [Older installations](https://dalodev.github.io/wake-dist/docs/run/older-installations): Steps for Wake installations older than a given release, oldest first; most installations need nothing from this page.
+- [Back up and restore](https://dalodev.github.io/wake-dist/docs/run/backup): Back up a Wake installation with wake-server backup, back up on a schedule, restore a backup and move Wake to another machine.
+- [Logs](https://dalodev.github.io/wake-dist/docs/run/logs): Read a Wake installation's container logs, upgrade logs and server logs, and find a request by its id in the access lines.
+- [Run the images yourself](https://dalodev.github.io/wake-dist/docs/run/images): Run Wake's published server and web images yourself, such as on Kubernetes or with an external Postgres: layout, migrations and upgrade order.
+
+## Reference
+
+- [wake CLI](https://dalodev.github.io/wake-dist/docs/reference/cli): Every wake CLI command and its options: setup, login, init, sync, watch, connect, doctor, evidence, upgrade and hook, with exit codes and environment.
+- [wake-server](https://dalodev.github.io/wake-dist/docs/reference/wake-server): Every wake-server command that manages a Wake installation, with its exit codes, its environment and the variables the installer reads.
+- [Server environment](https://dalodev.github.io/wake-dist/docs/reference/environment): The Wake server's environment: the settings an installation keeps in .env, and every variable for database, address, sign-in, evidence and logs.
+- [HTTP API](https://dalodev.github.io/wake-dist/docs/reference/api): Wake's HTTP API for your own scripts: endpoints for workspaces, members and invitations, the audit log, tokens and your account.
+- [Troubleshooting](https://dalodev.github.io/wake-dist/docs/reference/troubleshooting): Fix common Wake problems: start with wake doctor, then messages in the repository, on the server and from sign-in providers, and what to do.
+- [Security and privacy](https://dalodev.github.io/wake-dist/docs/reference/security): What leaves your Wake installation, what your agents send to your Wake, and how Wake keeps tokens, passwords, secrets and evidence files.
+- [What the server cleans up](https://dalodev.github.io/wake-dist/docs/reference/cleanup): Which expired records the Wake server deletes by itself every hour, such as sessions, tokens and sign-in requests, and how passes show in the logs.
+- [Verify a download](https://dalodev.github.io/wake-dist/docs/reference/verify-installer): Verify Wake's installer or CLI download before you run it, with the release key, the signed SHA256SUMS file and what the checksums cover.
+- [License](https://dalodev.github.io/wake-dist/docs/reference/license): The licenses that cover Wake's server and web app, the free plan, the CLI and the integrations, the documentation and older releases.
+- [Get help](https://dalodev.github.io/wake-dist/docs/reference/help): Where to ask a question about Wake, what to include when you report a bug, and how to report a vulnerability privately.

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The site's map for search engines: the landing's pages and the docs' (docs-search). -->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://dalodev.github.io/wake-dist/sitemap-landing.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://dalodev.github.io/wake-dist/docs/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>

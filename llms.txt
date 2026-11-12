@@ -1,0 +1,16 @@
+# Wake
+
+> Self-hosted project management for people who code with AI agents: each agent claims its task, reports as it works and closes it with proof, on a live roadmap. Free for up to 3 people.
+
+Wake keeps the plan in your repository, written with OpenSpec, Spec Kit or ODD, and the work on a server you run with Docker. Claude Code, Codex, OpenCode and Pi connect through the `wake` CLI and Wake's MCP server: an agent claims a task before it touches code, so no other agent can take it, and completes it with its tests and screenshots attached.
+
+## Start
+
+- [Wake](https://dalodev.github.io/wake-dist/): what Wake does, in English
+- [Wake en español](https://dalodev.github.io/wake-dist/es/): the same page in Spanish
+- [Install in three steps](https://dalodev.github.io/wake-dist/#install): install the server, connect a repository, connect an agent
+
+## Docs
+
+- [Wake docs for agents](https://dalodev.github.io/wake-dist/docs/llms.txt): every docs page with a one-line description
+- [Wake docs](https://dalodev.github.io/wake-dist/docs/): guides and reference

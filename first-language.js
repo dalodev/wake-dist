@@ -1,9 +1,11 @@
-// Runs in the head, before the page is parsed (design D2 of landing-steady-page). The built
-// page is in English. A visitor who gets another language must not read it first, so the page
-// stays hidden (src/styles.css) until src/mount.tsx has rendered it in their language.
-// The rule is `pickLanguage` of src/language.ts, repeated here because nothing can be imported
+// Runs in the head, before the page is parsed (design D2 of landing-steady-page). The page at
+// the base is built in English. A visitor who gets another language must not read it first, so
+// the page stays hidden (src/styles.css) until src/mount.tsx has rendered it in their language.
+// The page at `es/` is built in Spanish and always starts in Spanish, so it is never hidden.
+// The rule is `firstLanguage` of src/language.ts, repeated here because nothing can be imported
 // this early; test/first-language.test.ts holds the two to the same answer.
 (() => {
+  if (/\/es\/(index\.html)?$/.test(location.pathname)) return;
   let remembered = null;
   try {
     remembered = localStorage.getItem("wake.landing.language");
